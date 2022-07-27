@@ -4,7 +4,7 @@
 
 typedef unsigned int uint;
 
-//½á¹¹Ìå¶¨Òå
+//ç»“æž„ä½“å®šä¹‰
 typedef struct Node
 {
 	struct Node* left;
@@ -15,7 +15,7 @@ typedef struct Node
 	char* str;
 }merkletree;
 
-//ÓÃÓÚ´´½¨ÐÂ½ÚµãµÄºêº¯Êý
+//ç”¨äºŽåˆ›å»ºæ–°èŠ‚ç‚¹çš„å®å‡½æ•°
 #define new_node(tree, depth){\
 	tree = (merkletree *)malloc(sizeof(merkletree)); \
 	tree->left = NULL; \
@@ -111,7 +111,7 @@ merkletree* initial(merkletree* tree, char** s, int n)
 
 	if (n == 0)
 	{
-		printf("Initialization finish!\n");
+		//printf("Initialization finish!\n");
 		return tree;
 	}
 	else
