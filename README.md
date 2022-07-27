@@ -1,8 +1,11 @@
 Merkle Tree的特点
+
 Merkle Tree是一种树，大多数是二叉树，也可以多叉树，无论是几叉树，它都具有树结构的所有特点；
+
 Merkle Tree的叶子节点的value是数据集合的单元数据或者单元数据HASH。
+
 非叶子节点的value是根据它下面所有的叶子节点值，然后按照Hash算法计算而得出的。
-Second Preimage Attack:
+
 Merkle tree的树根并不表示树的深度，这可能会导致second-preimage attack，即攻击者创建一个具有相同Merkle树根的虚假文档。
 
 一个简单的解决方法在Certificate Transparency中定义：
